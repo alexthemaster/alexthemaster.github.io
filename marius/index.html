@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gay</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+        }
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <button onclick="start()" id="btn">click</button>
+        <img src="assets/img/dance.gif" id="dance" hidden>
+        <audio src="assets/audio/marius_gay.mp3" loop id="audio"></audio>
+        <h1 id="text" hidden>marius gay 🦀</h1>
+    </div>
+
+    <script>
+        function start() {
+            document.querySelector('#btn').hidden = true;
+            document.querySelector('#dance').hidden = false;
+            document.querySelector('#text').hidden = false;
+            document.querySelector('#audio').play();
+        }
+    </script>
+</body>
+</html>
